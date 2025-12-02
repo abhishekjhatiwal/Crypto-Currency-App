@@ -55,7 +55,7 @@ class GetCoinsUseCase @Inject constructor(
             emit(Resource.Success<List<Coin>>(coins))
         } catch (e: HttpException) {
             Log.e("GetCoinsUseCase", "HttpException: ${e.code()} - ${e.message()}", e)
-            emit(Resource.Error<List<Coin>>(e.localizedMessage ?: "An unexpected error occured"))
+            emit(Resource.Error<List<Coin>>(e.localizedMessage ?: "An unexpected error occurred"))
         } catch (e: IOException) {
             Log.e("GetCoinsUseCase", "IOException while calling API", e)
             emit(Resource.Error<List<Coin>>("Couldn't reach server. Check your internet connection."))

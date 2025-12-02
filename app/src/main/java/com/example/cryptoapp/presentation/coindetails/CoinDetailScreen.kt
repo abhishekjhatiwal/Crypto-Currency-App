@@ -1,6 +1,5 @@
 package com.example.cryptoapp.presentation.coindetails
 
-
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
